@@ -19,7 +19,7 @@ function verificaSeProjetoExiste(req, res, next) {
     const project = projects.find(p => p.id == id);
 
     if (!project) {
-        return res.status(400).json({error: 'Projeto não existe does not exist'});
+        return res.status(400).json({error: 'Projeto não existe!'});
     }
 
     return next();
